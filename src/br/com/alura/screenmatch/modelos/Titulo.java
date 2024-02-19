@@ -24,6 +24,10 @@ public class Titulo {
         this.duracaoEmMinutos = duracaoEmMinutos;
     }
 
+    public int getDuracaoEmMinutos() {
+        return duracaoEmMinutos;
+    }
+
     public void setIncluidoNoPlano(boolean incluidoNoPlano) {
         this.incluidoNoPlano = incluidoNoPlano;
     }

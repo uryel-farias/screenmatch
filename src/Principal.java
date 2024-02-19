@@ -8,7 +8,10 @@ public class Principal {
         lost.setNome("Lost");
         lost.setAnoDeLancamento(2000);
         lost.setTemporadas(7);
+        lost.setEpisodioPorTeporada(10);
+        lost.setMinutosPorEpisodio(15);
         lost.exibeFichaTecnica();
+        System.out.println("Duração para maratonar essa serie: " + lost.getDuracaoEmMinutos());
 
 
 
