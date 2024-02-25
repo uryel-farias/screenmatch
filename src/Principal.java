@@ -23,15 +23,6 @@ public class Principal {
         lost.exibeFichaTecnica();
         System.out.println("Duração para maratonar essa serie: " + lost.getDuracaoEmMinutos());
 
-        CalculadoraDeTempo calculadora = new CalculadoraDeTempo();
-        calculadora.inclui(meuFilme);
-        calculadora.inclui(meuFilme2);
-        calculadora.inclui(lost);
-        System.out.println(calculadora.getTempoTotal());
-
-        FiltroRecomendacao filtro = new FiltroRecomendacao();
-        filtro.filtra(meuFilme);
-
 
 
     }
