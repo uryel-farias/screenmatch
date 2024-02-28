@@ -8,12 +8,12 @@ import java.util.ArrayList;
 public class Principal {
     public static void main(String[] args) {
 
-        Filme meuFilme = new Filme();
-        meuFilme.setNome("Avatar");
+        Filme meuFilme = new Filme("Avatar");
+        //meuFilme.setNome("Avatar");
         meuFilme.setDuracaoEmMinutos(180);
 
-        Filme meuFilme2 = new Filme();
-        meuFilme2.setNome("Matrix");
+        Filme meuFilme2 = new Filme("Matrix");
+        //meuFilme2.setNome("Matrix");
         meuFilme2.setDuracaoEmMinutos(120);
 
         Serie lost = new Serie();
@@ -25,8 +25,8 @@ public class Principal {
         //lost.exibeFichaTecnica();
         //System.out.println("Duração para maratonar essa serie: " + lost.getDuracaoEmMinutos());
 
-        var novoFilme = new Filme();
-        novoFilme.setNome("Transformers 8");
+        var novoFilme = new Filme("Transformers 8");
+        //novoFilme.setNome("Transformers 8");
         novoFilme.setDuracaoEmMinutos(220);
         novoFilme.setAnoDeLancamento(2025);
         novoFilme.avalia(8);
