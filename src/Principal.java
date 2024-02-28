@@ -3,6 +3,8 @@ import br.com.alura.screenmatch.calculos.FiltroRecomendacao;
 import br.com.alura.screenmatch.modelos.Filme;
 import br.com.alura.screenmatch.modelos.Serie;
 
+import java.util.ArrayList;
+
 public class Principal {
     public static void main(String[] args) {
 
@@ -22,6 +24,21 @@ public class Principal {
         lost.setMinutosPorEpisodio(15);
         lost.exibeFichaTecnica();
         System.out.println("Duração para maratonar essa serie: " + lost.getDuracaoEmMinutos());
+
+        var novoFilme = new Filme();
+        novoFilme.setNome("Transformers 8");
+        novoFilme.setDuracaoEmMinutos(220);
+        novoFilme.setAnoDeLancamento(2025);
+        novoFilme.avalia(8);
+
+        ArrayList<Filme> listaDeFilmes = new ArrayList<>();
+        listaDeFilmes.add(novoFilme);
+        listaDeFilmes.add(meuFilme);
+        listaDeFilmes.add(meuFilme2);
+
+        System.out.println("Tamanho da lista de filmes: " + listaDeFilmes.size());
+        System.out.println("O primeiro filme da lista é: " + listaDeFilmes.get(0).getNome());
+
 
 
 
