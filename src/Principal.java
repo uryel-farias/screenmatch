@@ -22,8 +22,8 @@ public class Principal {
         lost.setTemporadas(7);
         lost.setEpisodioPorTeporada(10);
         lost.setMinutosPorEpisodio(15);
-        lost.exibeFichaTecnica();
-        System.out.println("Duração para maratonar essa serie: " + lost.getDuracaoEmMinutos());
+        //lost.exibeFichaTecnica();
+        //System.out.println("Duração para maratonar essa serie: " + lost.getDuracaoEmMinutos());
 
         var novoFilme = new Filme();
         novoFilme.setNome("Transformers 8");
@@ -36,8 +36,8 @@ public class Principal {
         listaDeFilmes.add(meuFilme);
         listaDeFilmes.add(meuFilme2);
 
-        System.out.println("Tamanho da lista de filmes: " + listaDeFilmes.size());
-        System.out.println("O primeiro filme da lista é: " + listaDeFilmes.get(0).getNome());
+        System.out.println(listaDeFilmes);
+        System.out.println("O primeiro filme da lista é: " + listaDeFilmes.get(0).toString());
 
 
 
