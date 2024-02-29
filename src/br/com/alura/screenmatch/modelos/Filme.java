@@ -10,10 +10,6 @@ public class Filme extends Titulo implements Classificavel {
         super(nomeDoFilme, anoDeLancamento);
     }
 
-    public String getNome() {
-        return nome;
-    }
-
     @Override
     public void setNome(String nome) {
         this.nome = nome;
