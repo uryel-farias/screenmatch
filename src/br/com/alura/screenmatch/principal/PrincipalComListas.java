@@ -15,14 +15,13 @@ public class PrincipalComListas {
         meuFilme2.avalia(8);
         var novoFilme = new Filme("Transformers 8", 2025);
         novoFilme.avalia(10);
-        Serie lost = new Serie("Lost" , 2000);
+
 
         ArrayList<Titulo> lista = new ArrayList<>();
 
         lista.add(meuFilme);
         lista.add(meuFilme2);
         lista.add(novoFilme);
-        lista.add(lost);
 
         for (Titulo item: lista){
             System.out.println(item.getNome());
