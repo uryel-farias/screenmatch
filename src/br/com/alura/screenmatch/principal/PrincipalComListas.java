@@ -33,7 +33,7 @@ public class PrincipalComListas {
 
         List<String> buscaPorArtista = new LinkedList<>();
         buscaPorArtista.add("Adam Sandler");
-        buscaPorArtista.add("Uryel Farias");
+        buscaPorArtista.add("Uryel Farias ");
         buscaPorArtista.add("Paulo");
         System.out.println(buscaPorArtista);
         Collections.sort(buscaPorArtista);
