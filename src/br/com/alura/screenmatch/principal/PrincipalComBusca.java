@@ -37,8 +37,16 @@ public class PrincipalComBusca {
 
         TituloOmdb meuTituloOmdb = gson.fromJson(json, TituloOmdb.class);
         System.out.println(meuTituloOmdb);
-        Titulo meuTitulo = new Titulo(meuTituloOmdb);
-        System.out.println("Titulo já convertido: " + meuTitulo);
+
+        try {
+            Titulo meuTitulo = new Titulo(meuTituloOmdb);
+            System.out.println("Titulo já convertido: " + meuTitulo);
+        } catch (NumberFormatException e){
+            System.out.println("Houve um erro na execução.");
+            System.out.println("Nome do erro: " + e.getMessage());
+        }
+
+
 
     }
 }
